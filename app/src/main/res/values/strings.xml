@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Notepad</string>
+    <string name="delete_label">Delete</string>
+    <string name="search_label">Search</string>
+    <string name="export_label">Export to Sdcard</string>
+    <string name="sort_label">sort by</string>
+</resources>

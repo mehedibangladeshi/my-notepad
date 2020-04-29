@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:title="@string/export_label"
+    android:id="@+id/exportToSd"
+    android:icon="@drawable/ic_storage_black_24dp"
+    app:showAsAction="collapseActionView"
+    app:iconTint="@android:color/white"
+    />
+
+    <item
+    android:title="@string/delete_label"
+    android:id="@+id/delete"
+    android:icon="@drawable/ic_delete_black_24dp"
+    app:showAsAction="collapseActionView"
+    app:iconTint="@android:color/white"
+    />
+
+</menu>

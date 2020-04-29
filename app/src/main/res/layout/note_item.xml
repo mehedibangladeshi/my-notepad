@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp"
+    android:elevation="4dp"
+
+    app:cardBackgroundColor="@android:color/white"
+    >
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp"
+
+    >
+    <TextView
+        android:id="@+id/tvUpdated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sample Date Updated"
+        android:ellipsize="end"
+        android:textColor="@color/colorTransparentGrey"
+
+        style="@style/TextAppearance.MaterialComponents.Overline"/>
+ <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sample Title"
+        android:maxLength="32"
+        android:ellipsize="end"
+        android:textColor="@color/colorPrimaryDark"
+
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sample Note"
+        android:maxLength="64"
+        android:ellipsize="end"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
