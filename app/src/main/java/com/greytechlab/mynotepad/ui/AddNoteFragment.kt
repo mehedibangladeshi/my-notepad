@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Environment
 import android.view.*
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.navigation.Navigation
@@ -51,6 +52,8 @@ class AddNoteFragment: BaseFragment() {
             if (mNote != null){
                 binding.etTitle.setText(mNote?.title)
                 binding.etNote.setText(mNote?.note)
+                val activity = requireActivity() as AppCompatActivity
+                activity.supportActionBar?.setTitle(R.string.label_edit_note)
 
                 val noteCreated = "Note Created: "+ getTimeInTextFormat(mNote!!.dateTimeCreated)
                 val noteUpdated = "Last Updated: "+ getTimeInTextFormat(mNote!!.dateTimeUpdated)

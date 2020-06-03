@@ -4,4 +4,6 @@
     <string name="search_label">Search</string>
     <string name="export_label">Export to Sdcard</string>
     <string name="sort_label">sort by</string>
+    <string name="label_edit_note">Edit Note</string>
+    <string name="label_add_note">Add Note</string>
 </resources>
