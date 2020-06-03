@@ -16,6 +16,7 @@ import com.greytechlab.mynotepad.ui.adapter.NotesAdapter
 import com.greytechlab.mynotepad.ui.base.BaseFragment
 import com.greytechlab.mynotepad.ui.dialog.ShowSingleChoiceItemListDialog
 import com.greytechlab.mynotepad.utils.sortingOptions
+import com.greytechlab.mynotepad.utils.toast
 import kotlinx.coroutines.launch
 
 class HomeFragment: BaseFragment() {
@@ -111,7 +112,7 @@ class HomeFragment: BaseFragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-//            R.id.search ->  context?.toast("Search note")
+            R.id.search ->  context?.toast("Search note")
             R.id.sort ->  showSortingFilter()
         }
         return super.onOptionsItemSelected(item)

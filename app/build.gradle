@@ -33,7 +33,7 @@ android {
 
 dependencies {
     def room_version = "2.2.5"
-    def navigation_version = "2.3.0-alpha05"
+    def navigation_version = "2.3.0-alpha06"
     def lifecycle_version = "2.2.0"
     def arch_version = "2.1.0"
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -41,7 +41,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
@@ -57,9 +57,11 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
 
     // ViewModel
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+//    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     // LiveData
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+//    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
 
+    // both viewmodel & livedata
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
     kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
 }
